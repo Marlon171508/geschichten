@@ -2,51 +2,55 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Deine Geschichten</title>
+    <title>Meine Geschichten</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="logo">Dein Name</div>
-        <nav class="nav">
-            <a href="#">Start</a>
-            <a href="#">Geschichten</a>
-            <a href="#">Über mich</a>
-            <a href="#">Kontakt</a>
-        </nav>
-    </header>
+<header class="header">
+    <div class="logo">Meine Geschichten</div>
+    <nav class="nav">
+        <a href="#">Start</a>
+        <a href="#">Geschichten</a>
+        <a href="#">Über</a>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Willkommen in meiner Welt der Geschichten</h1>
-        <p>Hier entstehen Worte, Welten und Charaktere.</p>
-        <button class="primary-btn">Geschichten entdecken</button>
-    </section>
+<section class="hero">
+    <h1>Geschichten, die im Kopf bleiben</h1>
+    <p>Kurzgeschichten, Grusel & dunkle Gedanken.</p>
+</section>
 
-    <!-- Content Section -->
-    <section class="content">
-        <h2>Noch leer – bald gefüllt mit Geschichten</h2>
-        <p>
-            Diese Seite ist der Anfang.  
-            Hier werden bald meine eigenen Geschichten, Ideen und Projekte zu finden sein.
-        </p>
-    </section>
+<section class="stories">
+    <div class="story-card">
+        <h2>Der leere Flur</h2>
+        <p>Jede Nacht hörte ich Schritte – obwohl niemand da war.</p>
+        <div class="story-actions">
+            <a href="story.html" class="read-btn">Geschichte lesen</a>
+            <button class="bookmark-btn">🔖</button>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Dein Name · Alle Rechte vorbehalten</p>
-    </footer>
+    <div class="story-card">
+        <h2>Das Klopfen</h2>
+        <p>Es klopfte an der Tür. Um 03:17 Uhr. Zum dritten Mal.</p>
+        <div class="story-actions">
+            <a href="story.html" class="read-btn">Geschichte lesen</a>
+            <button class="bookmark-btn">🔖</button>
+        </div>
+    </div>
+</section>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+<footer class="footer">
+    © 2026 · Deine Geschichten
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-

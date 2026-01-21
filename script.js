@@ -1,15 +1,21 @@
 // Dark Mode
 const toggle = document.getElementById("darkModeToggle");
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-});
+if (toggle) {
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        localStorage.setItem("darkmode", document.body.classList.contains("dark"));
+    });
+}
 
-// Lesezeichen (local)
-const bookmarks = document.querySelectorAll(".bookmark-btn");
+// Dark Mode speichern
+if (localStorage.getItem("darkmode") === "true") {
+    document.body.classList.add("dark");
+}
 
-bookmarks.forEach(btn => {
+// Lesezeichen
+document.querySelectorAll(".bookmark-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-        btn.textContent = btn.textContent === "🔖" ? "✅" : "🔖";
+        btn.textContent = "✔ Gespeichert";
     });
 });

@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <title>Meine Geschichten</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,40 +12,39 @@
 <header class="header">
     <div class="logo">Meine Geschichten</div>
     <nav class="nav">
-        <a href="#">Start</a>
-        <a href="#">Geschichten</a>
-        <a href="#">Über</a>
+        <a href="index.html">Start</a>
+        <a href="#stories">Geschichten</a>
+        <a href="#about">Über mich</a>
         <button id="darkModeToggle">🌙</button>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Geschichten, die im Kopf bleiben</h1>
-    <p>Kurzgeschichten, Grusel & dunkle Gedanken.</p>
+    <h1>Psychologische Kurzgeschichten</h1>
+    <p>Ruhig. Spannend. Verstörend.</p>
 </section>
 
-<section class="stories">
-    <div class="story-card">
+<section id="stories" class="stories">
+    <article class="story-card">
         <h2>Der leere Flur</h2>
-        <p>Jede Nacht hörte ich Schritte – obwohl niemand da war.</p>
+        <p>Jede Nacht hörte ich Schritte – obwohl niemand dort war.</p>
         <div class="story-actions">
             <a href="story.html" class="read-btn">Geschichte lesen</a>
             <button class="bookmark-btn">🔖</button>
         </div>
-    </div>
+    </article>
+</section>
 
-    <div class="story-card">
-        <h2>Das Klopfen</h2>
-        <p>Es klopfte an der Tür. Um 03:17 Uhr. Zum dritten Mal.</p>
-        <div class="story-actions">
-            <a href="story.html" class="read-btn">Geschichte lesen</a>
-            <button class="bookmark-btn">🔖</button>
-        </div>
-    </div>
+<section id="about" class="about">
+    <h2>Über mich</h2>
+    <p>
+        Ich schreibe psychologische Kurzgeschichten.  
+        Ruhig erzählt, aber mit einem Nachhall.
+    </p>
 </section>
 
 <footer class="footer">
-    © 2026 · Deine Geschichten
+    © 2026 · Alle Rechte vorbehalten
 </footer>
 
 <script src="script.js"></script>

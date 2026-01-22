@@ -2,51 +2,54 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine Geschichten</title>
+    <title>Kurzgeschichten für schlaflose Nächte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <div class="logo">Meine Geschichten</div>
-    <nav class="nav">
-        <a href="index.html">Start</a>
-        <a href="#stories">Geschichten</a>
-        <a href="#about">Über mich</a>
-        <button id="darkModeToggle">🌙</button>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Psychologische Kurzgeschichten</h1>
-    <p>Ruhig. Spannend. Verstörend.</p>
+<!-- Begrüßung -->
+<section class="welcome">
+    <div class="welcome-box">
+        <h1>Kurzgeschichten für schlaflose Nächte</h1>
+        <p>
+            Psychologische Kurzgeschichten zwischen Ruhe und Unbehagen.
+        </p>
+        <button id="discoverBtn">Jetzt die Geschichten von Marlon entdecken</button>
+    </div>
 </section>
 
-<section id="stories" class="stories">
-    <article class="story-card">
-        <h2>Der leere Flur</h2>
-        <p>Jede Nacht hörte ich Schritte – obwohl niemand dort war.</p>
-        <div class="story-actions">
-            <a href="story.html" class="read-btn">Geschichte lesen</a>
-            <button class="bookmark-btn">🔖</button>
+<!-- Story Übersicht -->
+<section id="stories" class="stories hidden">
+    <div class="story-card">
+        <div>
+            <h2>Der leere Flur</h2>
+            <p>Jede Nacht hörte ich Schritte – obwohl niemand da war.</p>
+            <span class="meta">⏱ 6 Minuten</span>
         </div>
-    </article>
+        <button class="read-btn" data-story="story1">Jetzt lesen</button>
+    </div>
+
+    <div class="story-card">
+        <div>
+            <h2>Das Klopfen</h2>
+            <p>Es klopfte an meiner Tür. Um 03:17 Uhr.</p>
+            <span class="meta">⏱ 4 Minuten</span>
+        </div>
+        <button class="read-btn" data-story="story2">Jetzt lesen</button>
+    </div>
 </section>
 
-<section id="about" class="about">
-    <h2>Über mich</h2>
-    <p>
-        Ich schreibe psychologische Kurzgeschichten.  
-        Ruhig erzählt, aber mit einem Nachhall.
-    </p>
+<!-- Lese-Modus -->
+<section id="reader" class="reader hidden">
+    <button id="backBtn">← Zurück</button>
+    <h1 id="readerTitle"></h1>
+    <article id="readerText"></article>
+    <button id="darkToggle">🌙 Besser im Dunkeln lesen</button>
 </section>
-
-<footer class="footer">
-    © 2026 · Alle Rechte vorbehalten
-</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+

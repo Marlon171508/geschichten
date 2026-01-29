@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Kurzgeschichten für schlaflose Nächte</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Geschichten</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <div id="story-list" class="story-list"></div>
+    <div id="story-content" class="story-content hidden"></div>
+    <button id="back-btn" class="back-btn hidden">← Zurück</button>
+  </div>
 
-<section id="welcome" class="welcome">
-    <div class="welcome-box">
-        <h1>Kurzgeschichten für schlaflose Nächte</h1>
-        <p>Psychologische Kurzgeschichten zwischen Ruhe und Unbehagen.</p>
-        <button id="discoverBtn">Jetzt die Geschichten von Marlon entdecken</button>
-    </div>
-</section>
-
-<section id="stories" class="stories hidden">
-    <div class="story-card">
-        <div>
-            <h2>Der leere Flur</h2>
-            <p>Jede Nacht hörte ich Schritte – obwohl niemand da war.</p>
-            <span class="meta">⏱ 6 Minuten</span>
-        </div>
-        <button class="read-btn" data-story="story1">Jetzt lesen</button>
-    </div>
-</section>
-
-<section id="reader" class="reader hidden">
-    <button id="backBtn">← Zurück</button>
-    <h1 id="readerTitle"></h1>
-    <article id="readerText"></article>
-    <button id="darkToggle">🌙 Besser im Dunkeln lesen</button>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
